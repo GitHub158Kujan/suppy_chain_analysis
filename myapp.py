@@ -132,7 +132,7 @@ elif section == "Manufacturing & Profitability":
                        title="Average Lead Time by Product Type")
     st.plotly_chart(lead_time)
 
-    top_skus = df.groupby("Product type").apply(lambda x: x.nlargest(5, "Profit")).reset_index(drop=True)
+    top_skus = df.groupby("Product type", group_keys=False).apply(lambda x: x.nlargest(5, "Profit")).reset_index(drop=True)
     top_skus = top_skus.sort_values(by="Profit", ascending=True)
     fig_top_skus = px.bar(
         top_skus,
