@@ -30,7 +30,7 @@ This **Streamlit web app** provides key insights into **sales, logistics, qualit
 ## 🛠️ Setup
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-repo/supply-chain-dashboard.git
+   git clone https://github.com/GitHub158Kujan/supply-chain-dashboard.git
    cd supply-chain-dashboard
    ```
 2. Install dependencies:
